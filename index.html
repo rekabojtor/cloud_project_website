@@ -61,6 +61,14 @@
       <div id="gemini"></div>
     </section>
   </main>
-  <script>fetch("./gemini.html").then(t => document.getElementById("gemini").innerHTML = t);</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      (async () => {
+        const r = await fetch("./gemini.html");
+        const html = await r.text();
+        document.getElementById("gemini").innerHTML = html;
+      })();
+    });
+</script>
 </body>
 </html>
