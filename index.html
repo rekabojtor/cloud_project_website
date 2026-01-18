@@ -1,150 +1,65 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Toy Poodle Guide — First-Time Owners</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Puppies for Beginners</title>
   <style>
-    :root{
-      --bg:#fffaf0;
-      --card:#ffffff;
-      --muted:#6b7280;
-      --accent:#ef6c00;
-      --accent-2:#f59e0b;
-      --soft:#fff7ed;
-      --glass: rgba(255,255,255,0.6);
-    }
-    *{box-sizing:border-box}
-    body{font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,var(--soft),#fff); color:#111827}
-    .wrap{max-width:1000px;margin:28px auto;padding:20px}
-
-    header{display:flex;align-items:center;gap:18px;margin-bottom:18px}
-    .logo{width:76px;height:76px;border-radius:12px;overflow:hidden;flex:0 0 76px;box-shadow:0 6px 18px rgba(14,30,37,0.08)}
-    .logo img{width:100%;height:100%;object-fit:cover;display:block}
-    h1{font-size:1.6rem;margin:0}
-    p.lead{margin:6px 0 0;color:var(--muted)}
-
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start;margin-bottom:18px}
-    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.9), var(--card));padding:18px;border-radius:14px;box-shadow:0 8px 30px rgba(17,24,39,0.06)}
-    .hero-card h2{margin:0 0 8px}
-    .hero-card p{margin:0;color:var(--muted)}
-
-    .photos{display:flex;flex-direction:column;gap:10px}
-    .photos img{width:100%;height:160px;object-fit:cover;border-radius:10px;display:block}
-
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:8px}
-    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 16px rgba(2,6,23,0.06)}
-    .card h3{margin:0 0 8px}
-    ul{margin:8px 0 0 18px;color:var(--muted)}
-    li{margin:8px 0}
-
-    .checklist{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{background:linear-gradient(90deg,var(--accent-2),var(--accent));color:white;padding:8px 10px;border-radius:999px;font-weight:600;font-size:.9rem;box-shadow:0 6px 18px rgba(245,158,11,0.12)}
-
-    footer{margin-top:20px;color:var(--muted);font-size:0.9rem;text-align:center}
-
-    .photo-row{display:flex;gap:10px}
-    .photo-row img{height:120px;flex:1 1 0;border-radius:10px;object-fit:cover}
-
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr}
-      .photos img{height:140px}
-      .logo{width:64px;height:64px}
-    }
+    html,body{margin:0;background:#fff;font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial;color:#111}
+    main{max-width:900px;margin:24px auto;padding:16px}
+    header{display:flex;gap:14px;align-items:center;margin-bottom:16px}
+    .logo{width:64px;height:64px;border-radius:12px;object-fit:cover}
+    .grid{display:grid;gap:14px;grid-template-columns:1fr 320px}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+    .pics img{width:100%;height:150px;object-fit:cover;border-radius:12px;display:block;margin-bottom:10px}
+    h1{margin:0;font-size:1.4rem}
+    h2,h3{margin:.2rem 0 .6rem}
+    p{margin:.4rem 0;color:#374151}
+    ul{margin:.4rem 0 0 18px;color:#374151}
+    iframe{display:block;width:100%;height:420px;border:0;background:#fff}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.pics img{height:180px}}
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <main>
     <header>
-      <div class="logo" aria-hidden>
-        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=60" alt="cute toy poodle thumbnail">
-      </div>
+      <img class="logo" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=60" alt="puppy" />
       <div>
-        <h1>Toy Poodle Guide for First-Time Owners</h1>
-        <p class="lead">A friendly, colorful primer with quick tips, caring essentials, and cute photos to help you get started.</p>
+        <h1>Puppies for Beginners</h1>
+        <p>Quick basics for first-time puppy owners: food, training, socialization, and care.</p>
       </div>
     </header>
 
-    <div class="hero">
-      <div class="hero-card">
-        <h2>About toy poodles</h2>
-        <p>Toy poodles are the smallest poodle variety — clever, affectionate, and lively. They typically weigh 4–6 kg (9–12 lbs) and can live 12–15 years or more. Their curly coat is low-shedding but needs regular care. Great for apartment life when given daily play and attention.</p>
+    <section class="grid">
+      <div class="card">
+        <h2>What puppies need</h2>
+        <p>Puppies are curious, bitey, and energetic. A simple routine + gentle training goes a long way.</p>
 
-        <div class="cards" style="margin-top:14px">
-          <div class="card">
-            <h3>Training</h3>
-            <ul>
-              <li>Use short positive sessions (5–10 min) to keep them engaged.</li>
-              <li>Socialize with people and dogs early to build confidence.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Grooming</h3>
-            <ul>
-              <li>Brush several times a week to prevent mats; trims every 6–8 weeks.</li>
-              <li>Regular ear checks help avoid infections (their ears are floppy).</li>
-            </ul>
-          </div>
-        </div>
+        <h3>Daily basics</h3>
+        <ul>
+          <li>Short training sessions (5–10 min), lots of praise.</li>
+          <li>Potty breaks after sleep, play, and meals.</li>
+          <li>Safe chewing toys to protect your hands and furniture.</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Health + care</h3>
+        <ul>
+          <li>Vet plan: vaccines, deworming, flea/tick as needed.</li>
+          <li>Gradual socialization (new people, sounds, places).</li>
+          <li>Grooming depends on coat—start handling paws/ears early.</li>
+        </ul>
       </div>
 
-      <aside>
-        <div class="photos">
-          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=60" alt="toy poodle sitting">
-          <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?auto=format&fit=crop&w=800&q=60" alt="happy puppy closeup">
-        </div>
-      </aside>
-    </div>
-
-    <section style="display:grid;grid-template-columns:1fr 360px;gap:14px;align-items:start">
-      <div>
-        <div class="card">
-          <h3>Practical tips</h3>
-          <ul>
-            <li>Measure food to avoid overfeeding—small dogs pack on weight fast.</li>
-            <li>Provide mental toys and short walks; they're energetic but not marathon runners.</li>
-            <li>Brush your puppy's teeth several times a week to prevent dental disease.</li>
-            <li>Use a harness rather than a collar for walks to protect their neck.</li>
-          </ul>
-        </div>
-
-        <div class="card" style="margin-top:12px">
-          <h3>Fun facts</h3>
-          <ul>
-            <li>Poodles were originally water retrievers—surprising for such a small dog!</li>
-            <li>They come in many colors: apricot, cream, black, silver, and more.</li>
-            <li>Toy poodles excel at tricks and agility; their intelligence is a big plus.</li>
-          </ul>
-        </div>
-      </div>
-
-      <aside>
-        <div class="card">
-          <h3>Quick starter checklist</h3>
-          <div class="checklist">
-            <div class="chip">Collar & ID</div>
-            <div class="chip">Harness & leash</div>
-            <div class="chip">Small-breed food</div>
-            <div class="chip">Brush & comb</div>
-            <div class="chip">Cozy bed</div>
-            <div class="chip">Nail clippers</div>
-            <div class="chip">Vet & microchip</div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:12px">
-          <h3>Photo gallery</h3>
-          <div class="photo-row">
-            <img src="https://images.unsplash.com/photo-1543466835-00a7907e7f6b?auto=format&fit=crop&w=600&q=60" alt="toy poodle playful">
-            <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&w=600&q=60" alt="tiny poodle portrait">
-          </div>
-        </div>
+      <aside class="pics">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=60" alt="puppy sitting" />
+        <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?auto=format&fit=crop&w=800&q=60" alt="puppy closeup" />
       </aside>
     </section>
 
-    <footer>
-      <p>This page is an introduction only. For health or behavior issues, consult a veterinarian or certified trainer. Enjoy your puppy!</p>
-    </footer>
-  </div>
+    <section class="card" style="margin-top:14px">
+      <h2>Daily fun facts about puppies (Generated by Gemini)</h2>
+      <iframe src="gemini.txt" title="Daily fun facts"></iframe>
+    </section>
+  </main>
 </body>
 </html>
